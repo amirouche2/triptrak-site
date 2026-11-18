@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · TripTrak</title>
+<meta name="description" content="Aide et contact pour l'application TripTrak.">
+<style>
+  :root { --brand:#4C1D95; --ink:#0E1116; --text:#3F3F46; --muted:#71717A; --line:rgba(15,23,42,.10); --bg:#F7F7F8; --card:#FFFFFF; }
+  @media (prefers-color-scheme: dark) { :root { --brand:#A78BFA; --ink:#FAFAFA; --text:#D4D4D8; --muted:#A1A1AA; --line:rgba(255,255,255,.10); --bg:#09090B; --card:#18181B; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 22px 72px; }
+  .brand { display:flex; align-items:center; gap:10px; color:var(--brand); font-weight:800; text-decoration:none; }
+  .brand i { width:30px; height:30px; border-radius:9px; background:var(--brand); display:inline-block; }
+  h1 { color:var(--ink); font-size:clamp(30px,6vw,40px); line-height:1.15; letter-spacing:-.8px; margin:28px 0 10px; }
+  .lead { font-size:18px; margin:0 0 28px; }
+  .contact { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:22px; padding:20px 22px; }
+  .contact strong { color:var(--ink); display:block; font-size:17px; }
+  .button { background:var(--brand); color:#fff; text-decoration:none; font-weight:800; padding:12px 18px; border-radius:14px; }
+  h2 { color:var(--ink); font-size:20px; margin:44px 0 12px; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:4px 18px; margin:10px 0; }
+  summary { cursor:pointer; color:var(--ink); font-weight:700; padding:14px 0; }
+  details p { font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.7; margin:0 0 16px; }
+  footer { margin-top:56px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  a { color:var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="./index.html"><i aria-hidden="true"></i>TripTrak</a>
+  <h1>Besoin d’aide ?</h1>
+  <p class="lead">Une question, un problème ou une idée : écrivez-nous, votre message arrive directement à l’équipe.</p>
+
+  <div class="contact">
+    <div><strong>Par e-mail</strong>support@triptrak.eu</div>
+    <a class="button" href="mailto:support@triptrak.eu?subject=%5BTripTrak%5D%20Support">Nous écrire</a>
+  </div>
+  <p style="color:var(--muted);font-size:14px">Depuis l’application : Menu → Contactez-nous, qui joint si vous le souhaitez la version de l’app pour nous aider à diagnostiquer.</p>
+
+  <h2>Questions fréquentes</h2>
+  <details><summary>Pourquoi TripTrak demande-t-il l’accès « Toujours » à ma position ?</summary>
+    <p>Pour continuer d’enregistrer un trajet quand votre téléphone est verrouillé ou dans votre poche. Sans lui, le trajet s’enregistre tant que l’application reste ouverte. TripTrak ne lit votre position que pendant un trajet que vous avez démarré.</p></details>
+  <details><summary>Le tracé de mon trajet n’apparaît pas</summary>
+    <p>Vérifiez dans Menu → Réglage tracking GPS que la localisation est autorisée. Le tracé se dessine à partir du deuxième point GPS : à l’arrêt complet, il faut quelques mètres de déplacement avant qu’il apparaisse.</p></details>
+  <details><summary>Comment est calculé le coût par kilomètre ?</summary>
+    <p>Chaque trajet est multiplié par votre tarif au kilomètre au moment où il est enregistré. Si vous changez ce tarif, les trajets passés gardent le coût calculé à l’époque ; le nouveau tarif s’applique aux suivants.</p></details>
+  <details><summary>Comment sont estimés les frais annuels du véhicule ?</summary>
+    <p>Chaque tarif saisi dans l’agenda est ramené à l’année selon sa périodicité : un contrôle technique à 90 € tous les 2 ans compte pour 45 € par an, une vidange à 120 € tous les ans pour 120 €.</p></details>
+  <details><summary>Où sont stockées mes données ?</summary>
+    <p>Sur votre téléphone. Si vous créez un compte, une copie est aussi sauvegardée en ligne pour la retrouver sur vos autres appareils. Le détail figure dans notre <a href="./privacy.html">politique de confidentialité</a>.</p></details>
+
+  <footer>TripTrak · <a href="./privacy.html">Politique de confidentialité</a></footer>
+</main>
+</body>
+</html>
